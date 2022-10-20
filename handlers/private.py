@@ -21,7 +21,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧔🏻 Sahibim", url="https://t.me/BrendUIvi"
+                        "🧔🏻 Sahibim", url="https://t.me/BrendUlvi"
                     ),
                     InlineKeyboardButton(
                         "🇦🇿 Rəsmi Kanal", url="https://t.me/UlviProject"
@@ -120,7 +120,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧔🏻 Sahibim", url="https://t.me/BrendUIvi"
+                        "🧔🏻 Sahibim", url="https://t.me/BrendUlvi"
                     ),
                     InlineKeyboardButton(
                         "🇦🇿 Rəsmi Kanal", url="https://t.me/UlviProject"
