@@ -127,18 +127,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Assistant Account[𝐔𝐥𝐯𝐢 𝐌𝐮̈𝐬𝐢𝐜 𓅓](https://t.me/UlviMusicAsistan) Uğurla Qoşuldu.\n\nİndi musiqi oxumağa başlayır**")
+                        message.chat.id, "**Assistant Account[𝐔𝐥𝐯𝐢 𝐌𝐮̈𝐬𝐢𝐜 𓅓](https://t.me/UlviAsistan) Uğurla Qoşuldu.\n\nİndi musiqi oxumağa başlayır**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"Assistantın banını açın\nİstifadəçi adı: @UlviMusicAsistan\nKöməkçi ID: `5743778726`")
+                        f"Assistantın banını açın\nİstifadəçi adı: @UlviMusicAsistan\nKöməkçi ID: `5125669388`")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"Assistantın banını açın\nİstifadəçi adı: @UlviMusicAsistan\nKöməkçi ID: `5743778726`")
+            f"Assistantın banını açın\nİstifadəçi adı: @UlviMusicAsistan\nKöməkçi ID: `5125669388`")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
