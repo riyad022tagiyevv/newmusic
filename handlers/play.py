@@ -127,18 +127,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Assistant Account[𝐔𝐥𝐯𝐢 𝐌𝐮̈𝐬𝐢𝐜 𓅓](https://t.me/UlviAsistant) Uğurla Qoşuldu.\n\nİndi musiqi oxumağa başlayır**")
+                        message.chat.id, "**Assistant Account[AudioWave](https://t.me/AudioWaveAsistant) Uğurla Qoşuldu.\n\nİndi musiqi oxumağa başlayır**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"Assistantın banını açın\nİstifadəçi adı: @UlviAsistant\nKöməkçi ID: `5125669388`")
+                        f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistant\nKöməkçi ID: `5639303389`")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"Assistantın banını açın\nİstifadəçi adı: @UlviAsistant\nKöməkçi ID: `5125669388`")
+            f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistant\nKöməkçi ID: `5639303389`")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -147,7 +147,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"Bu mahnının vaxtı çox uzundur😶 {DURATION_LIMIT} dəqiqəlik icazə verilir!"
+                f"Bu mahnının vaxtı çox uzundur {DURATION_LIMIT} dəqiqəlik icazə verilir!"
             )
 
         file_name = get_file_name(audio)
@@ -198,8 +198,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                       [
             [
-                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/UlviProject"),
-                InlineKeyboardButton("🆘 Support", url=f"https://t.me/UlviSup"),
+                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/EdaletProject"),
+                InlineKeyboardButton("🆘 Support", url=f"https://t.me/EdaletSup"),
             ],[
                 InlineKeyboardButton("🗑️ Menyunu Bağla", callback_data="cls"),
             ],
@@ -263,8 +263,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
                       [
             [
-                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/UlviProject"),
-                InlineKeyboardButton("🆘 Support", url=f"https://t.me/UlviSup"),
+                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/EdaletProject"),
+                InlineKeyboardButton("🆘 Support", url=f"https://t.me/EdaletSup"),
             ],[
                 InlineKeyboardButton("🗑️ Menyunu Bağla", callback_data="cls"),
             ],
