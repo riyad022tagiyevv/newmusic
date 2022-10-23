@@ -9,22 +9,22 @@ from helpers.filters import command, other_filters2
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgIAAxkBAAFQ6LljGsrT4XPljp14SXutiGgdSWYaQgACegEAAhAabSKcnbdITu9y3ikE")
     await message.reply_text(
-      f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @UlviSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @UlviSongRobot\n\n🤖 Bot işləmərsə: @BrendUlvi**
+      f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @UlviSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @audiowavebot\n\n🤖 Bot işləmərsə: @edalet_22**
       """,
          reply_markup
          =InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
+                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/audiowavebot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧔🏻 Sahibim", url="https://t.me/BrendUlvi"
+                        "🧔🏻 Sahibim", url="https://t.me/edalet_22"
                     ),
                     InlineKeyboardButton(
-                        "🇦🇿 Rəsmi Kanal", url="https://t.me/UlviProject"
+                        "🇦🇿 Rəsmi Kanal", url="https://t.me/EdaletProject"
                     )
                 ],
                 [
@@ -41,7 +41,7 @@ async def start_(client: Client, message: Message):
 
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]))
 async def help(_, message: Message):
-      await message.reply_text(" Səsli söhbətdə musiqi oxuması üçün /play əmrindən istifadə edə bilərsiniz ⤵️\n\nMəsələn:\n\n1. `/play Ayaz Babayev - Sən mənlə`\n2. `/play https://youtu.be/qLXUa89Q5WI`\n\n/alive - Botun işlək olduğunu yoxlamaq üçün əmrdir. Yalnız bot sahibi istifadə edə bilər.\n\n⚠️ Botun qruplarda işləyə bilməsi üçün admin olmalıdır !", 
+      await message.reply_text(" Səsli söhbətdə musiqi oxuması üçün /play əmrindən istifadə edə bilərsiniz ⤵️\n\nMəsələn:\n\n1. `/play Məşədi Baba -Götürəəm səni `\n2. `/play https://youtu.be/0dLFu2rE2L4`\n\n/alive - Botun işlək olduğunu yoxlamaq üçün əmrdir. Yalnız bot sahibi istifadə edə bilər.\n\n⚠️ Botun qruplarda işləyə bilməsi üçün admin olmalıdır !", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
@@ -110,20 +110,20 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @UlviSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @UlviSongRobot\n\n🤖 Digər Botlar: @UlviProject**""",
+    await query.edit_message_text(f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @UlviSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @AudioWave\n\n🤖 Digər Botlar: @EdaletProject**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
+                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/@audiowavebot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧔🏻 Sahibim", url="https://t.me/BrendUlvi"
+                        "🧔🏻 Sahibim", url="https://t.me/edalet_22"
                     ),
                     InlineKeyboardButton(
-                        "🇦🇿 Rəsmi Kanal", url="https://t.me/UlviProject"
+                        "🇦🇿 Rəsmi Kanal", url="https://t.me/EdaletProject"
                     )
                 ],
                 [
