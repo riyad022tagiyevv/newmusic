@@ -133,12 +133,12 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistan\nKöməkçi ID: `23576950`")
+                        f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistan\nKöməkçi ID: `1825783363`")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistan\nKöməkçi ID: `23576950`")
+            f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistan\nKöməkçi ID: `1825783363`")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
