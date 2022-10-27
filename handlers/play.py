@@ -138,7 +138,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistant\nKöməkçi ID: `5639303389`")
+            f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistan\nKöməkçi ID: `23576950`")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
