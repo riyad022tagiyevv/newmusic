@@ -133,7 +133,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistant\nKöməkçi ID: `5639303389`")
+                        f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistant\nKöməkçi ID: `23576950`")
     try:
         await USER.get_chat(chid)
     except:
