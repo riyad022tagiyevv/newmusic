@@ -9,22 +9,22 @@ from helpers.filters import command, other_filters2
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgQAAxkBAAFRWFljVZzxW5UeHWTSzPspsYtTXsNCfQACGhAAAqbxcR4PmeuPPkgkVioE")
     await message.reply_text(
-      f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @EdaletSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @audiowavebot\n\n🤖 Bot işləmərsə: @edalet_22**
+      f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @EdaletSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @audiowavebot\n\n🤖 Bot işləmərsə: @RiyadAndMe**
       """,
          reply_markup
          =InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/audiowavebot?startgroup=true"
+                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/N1MusicRobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧔🏻 Sahibim", url="https://t.me/edalet_22"
+                        "🧔🏻 Sahibim", url="https://t.me/RiyadAndMe"
                     ),
                     InlineKeyboardButton(
-                        "🇦🇿 Rəsmi Kanal", url="https://t.me/EdaletProject"
+                        "🇦🇿 Rəsmi Kanal", url="https://t.me/RiyaddBlogg"
                     )
                 ],
                 [
@@ -110,20 +110,20 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @EdaletSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @AudioWave\n\n🤖 Digər Botlar: @EdaletProject**""",
+    await query.edit_message_text(f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @EdaletSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @AudioWave\n\n🤖 Digər Botlar: @Riyaddblogg**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/@audiowavebot?startgroup=true"
+                        "➕ Məni öz qrupuna əlavə et ➕", url=f"https://t.me/N1MusicRobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧑🏻‍💻 Sahibim", url="https://t.me/edalet_22"
+                        "🧑🏻‍💻 Sahibim", url="https://t.me/RiyadAndMe"
                     ),
                     InlineKeyboardButton(
-                        "🇦🇿 Rəsmi Kanal", url="https://t.me/EdaletProject"
+                        "🇦🇿 Rəsmi Kanal", url="https://t.me/RiyaddBlogg"
                     )
                 ],
                 [
