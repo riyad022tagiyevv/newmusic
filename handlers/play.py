@@ -127,18 +127,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Assistant Account[AudioWave](https://t.me/AudioWaveAsistant) Uğurla Qoşuldu.\n\nİndi musiqi oxumağa başlayır**")
+                        message.chat.id, "**Assistant Account[N1Music](https://t.me/N1MusicAsistant) Uğurla Qoşuldu.\n\nİndi musiqi oxumağa başlayır**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistan\nKöməkçi ID: `1825783363`")
+                        f"Assistantın banını açın\nİstifadəçi adı: @N1MusicAsistan\nKöməkçi ID: `1566763718`")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"Assistantın banını açın\nİstifadəçi adı: @AudioWaveAsistan\nKöməkçi ID: `1825783363`")
+            f"Assistantın banını açın\nİstifadəçi adı: @N1MsusicAistan\nKöməkçi ID: `1566763718`")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -198,8 +198,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                       [
             [
-                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/EdaletProject"),
-                InlineKeyboardButton("🆘 Support", url=f"https://t.me/EdaletSup"),
+                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/RiyaddBlogg"),
+                InlineKeyboardButton("🆘 Support", url=f"https://t.me/sohbet_n1"),
             ],[
                 InlineKeyboardButton("🗑️ Menyunu Bağla", callback_data="cls"),
             ],
@@ -263,8 +263,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
                       [
             [
-                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/EdaletProject"),
-                InlineKeyboardButton("🆘 Support", url=f"https://t.me/EdaletSup"),
+                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/RiyaddBlogg"),
+                InlineKeyboardButton("🆘 Support", url=f"https://t.me/sohbet_no1"),
             ],[
                 InlineKeyboardButton("🗑️ Menyunu Bağla", callback_data="cls"),
             ],
