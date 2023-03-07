@@ -7,7 +7,7 @@ from helpers.filters import command, other_filters2
 
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgQAAxkBAAFRWFljVZzxW5UeHWTSzPspsYtTXsNCfQACGhAAAqbxcR4PmeuPPkgkVioE")
+    await message.reply_sticker("https://images.app.goo.gl/2H3urPqanjCSpf2n8")
     await message.reply_text(
       f"""**{bot} Sizi Salamlayır👋🏻\n\nℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin\n\n🆘 Hər hansı problemlə qarşılaşsanız @EdaletSup qrupumuza gəlib bildirə bilərsiniz!\n\n🎵 Musiqi yükləmək üçün digər botumuz: @audiowavebot\n\n🤖 Bot işləmərsə: @RiyadAndMe**
       """,
