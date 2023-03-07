@@ -2,7 +2,7 @@
   "name": "Rahid Music 🎸",
   "description": "Telegram qrup səs çatında mahnıları səsləndirmək üçün açıq mənbə botu. Powered by Rahid.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Rahid2003/RahidMP3",
+  "repository": "https://github.com/riyad022tagiyevv/newmusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
